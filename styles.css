@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+* {
+  box-sizing:  border-box;
+}
+
+body {
+  background-image: url("paper.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin:  auto;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 280%;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  position: relative;
+  top: 20px;
+}
+
+h1, h2, h3 {
+  font-family: Homemade Apple;
+}
+
+.container {
+  height:  800px;
+  width: 750px;
+  margin: auto;
+}
+
+/*Styling the inputs- city and preference*/
+.location {
+  text-align: center;
+}
+
+input::placeholder {
+  color:  black;
+}
+#cityName {
+  opacity: 0.4;
+  transition: 2s;
+  top: 220px;
+  left: -40px;
+  text-decoration: none;
+}
+
+#cityName:hover {
+
+  animation: inputHover 1s linear forwards ;
+}
+
+@keyframes inputHover {
+  from {
+    opacity: 0.4;
+  }
+  to{
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness:  0.3px;
+  }
+}
+
+#cityName, #citySubmit, #pSubmit, #nextButton {
+  background:  transparent;
+  border:  none;
+  position: relative;
+  font-family: Reenie Beanie;
+  font-size: 170%;
+}
+
+#citySubmit {
+  border: solid;
+  border-width: thin;
+  top: 180px;
+  opacity: 0.3;
+}
+
+#citySubmit:hover {
+  transition: 2s;
+  animation: inputHover 2s linear forwards;
+}
+
+#cityName:focus {
+  border: none;
+  outline:  none;
+}
+
+.location > label {
+  display:  block;
+  font-family: Reenie Beanie;
+  font-size: 190%;
+  position: relative;
+  top: 200px;
+  width:  50%;
+}
+
+#pSubmit{
+  float:  right;
+  position: relative;
+  top: -40px;
+  transition: 2s;
+  left: -120px;
+  opacity: 0.3;
+}
+
+#pSubmit:hover {
+  animation: inputHover 1s linear forwards;
+}
+
+#preferences {
+  font-family:  Reenie Beanie;
+  font-size: 140%;
+  position: relative;
+  width: 90%;
+  left: 30px;
+}
+
+.aPara, .bPara, .cPara, .dPara {
+  float:  right;
+  position: relative;
+  top:  -70px;
+}
+/*Styling the weather page*/
+
+.desc {
+  font-family: Reenie Beanie;
+  font-size: 160%;
+}
+
+.temp {
+  font-size: 200%;
+  margin:  5px;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+#nextButton {
+  margin-top:  90px;
+}
+
+#nextButton:hover {
+  text-decoration: underline;
+}
+
+/*Styling the card*/
+.card-tab {
+  font-family: Reenie Beanie;
+  text-align: center;
+  font-size: 170%;
+  position:  relative;
+  left: 20%;
+  transition:  2s;
+  opacity:  0;
+  animation: display 2s linear forwards;
+}
+
+@keyframes display {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+.tab {
+  display: none;
+}
+

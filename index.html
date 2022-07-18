@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>What Should I Do Today?</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- change the path below to scss/styles.scss to use SASS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h1>What Should I Do Today?</h1>
+
+    <div class="container">
+      <form class="form1">
+        <div class="tab">
+          <div class="location">
+            <label for="cityName">And where in the world might you be?</label>
+            <input type="text" id="cityName" placeholder="City name" required>
+            <button type="button" id="citySubmit">Send it through!</button>
+          </div>
+        </div>
+        <div class="tab" id="preferences">
+          <p>Any preferences?</p>
+
+          <div class="budget">
+            <p>Budget?</p>
+            <input type="radio" name="budget" value="Big">
+            <label for="bBudget">Big</label><br>
+            <input type="radio" name="budget" value="Small">
+            <label for="sBudget">Small</label><br>
+            <p class="bPara"></p>
+          </div>
+
+          <div class="art">
+            <p>Something artsy?</p>
+            <input type="radio" name="art" value="Y">
+            <label for="yArt">Yes Yes</label><br>
+            <input type="radio" name="art" value="N">
+            <label for="nArt">Absolutely not</label><br>
+            <p class="aPara"></p>
+          </div>
+
+          <div class="company">
+            <p>Got company?</p>
+            <input type="radio"  name="company" value="Y">
+            <label for="yComp">Yep.</label><br>
+            <input type="radio" name="company" value="N">
+            <label for="nComp">Nope.</label>
+            <p class="cPara"></p>
+          </div>
+
+          <div class="door">
+            <p>In or out?</p>
+            <input type="radio" name="door" value="In">
+            <label for="in">Staying in.</label><br>
+            <input type="radio" name="door" value="Out">
+            <label for="out">Going out.</label><br>
+            <p class="dPara"></p>
+          </div>
+          <br>
+            <button type="button" id="pSubmit" disabled>Thats all</button>
+
+        </div>
+
+        <div class="tab">
+          <h2 class="city"></h2>
+          <div class="desc">
+            <div class="temp"></div>
+            <div class="icon"></div>
+            <div class="description"></div>
+            <div class="humidity"></div>
+          </div>
+          <button type="button" id="nextButton" disabled>Next→</button>
+        </div>
+
+        <div class="tab" id="activities">
+
+        </div>
+
+      </form>
+    </div>
+
+  <script src="js/index.js" type="module"> 
+
+
+  </script>
+</body>
+
+</html>
